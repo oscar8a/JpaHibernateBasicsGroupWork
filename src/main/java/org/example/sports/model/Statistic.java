@@ -6,12 +6,27 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Objects;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @Getter
 @Setter
 @Entity
-@Table
+@Table(name="SPORTS_STATISTICS")
 public class Statistic {
     @Id
-    private int id;
+    private int id= counter.getAndIncrement();
+    private String name;
+    private int scoreInGame;
+    private String sport;
+    private static final AtomicInteger counter=new AtomicInteger(0);
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Statistic statistic = (Statistic) o;
+        return name.equals(statistic.name);
+    }
+
 }

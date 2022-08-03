@@ -18,7 +18,7 @@ public class Statistic {
     private int id= counter.getAndIncrement();
     private String name;
     private int scoreInGame;
-    private String sport;
+    private String sport="Bowling";
     private static final AtomicInteger counter=new AtomicInteger(0);
 
     @Override

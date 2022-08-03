@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a08601dd-2305-4399-a27d-96bb8e6d2003" name="Changes" comment="major functionality works; fix distinct sql statement">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sports/SportsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sports/SportsMain.java" afterDir="false" />
+    <list default="true" id="a08601dd-2305-4399-a27d-96bb8e6d2003" name="Changes" comment="functionality works; need to add ability for user to choose sport and other statistics;">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sports/model/Statistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sports/model/Statistic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659548322080</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="functionality works; need to add ability for user to choose sport and other statistics;">
+      <created>1659552698667</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659552698667</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,14 +135,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="major functionality works; fix distinct sql statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="major functionality works; fix distinct sql statement" />
+    <MESSAGE value="functionality works; need to add ability for user to choose sport and other statistics;" />
+    <option name="LAST_COMMIT_MESSAGE" value="functionality works; need to add ability for user to choose sport and other statistics;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/sports/SportsMain.java</url>
-          <line>54</line>
+          <line>56</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>

@@ -109,7 +109,7 @@ public class SportsMain {
     private static int getUserStatisticChoice(UserInputService userInputService) {
         return Integer.parseInt(userInputService.getUserInput("What statistic would you like to see?\n" +
                         "1. Print their average points per game\n" +
-                        "2. Max number of points in a game\n",
+                        "2. Max number of points in a game",
                 new NonBlankInputValidationRule()));
     }
 
@@ -153,7 +153,7 @@ public class SportsMain {
             count++;
 
         }
-        int chosenPlayer = Integer.parseInt(userInputService.getUserInput("Which athlete do you want to add another statistic for?" + playerNamesString,
+        int chosenPlayer = Integer.parseInt(userInputService.getUserInput("Which athlete do you want to choose?" + playerNamesString,
                 new NonBlankInputValidationRule()));
         Statistic statistic = new Statistic();
         statistic.setName(statisticNamesList.get(chosenPlayer).getName());

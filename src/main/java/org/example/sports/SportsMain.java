@@ -48,8 +48,8 @@ public class SportsMain {
                     case 3:
                         int userStatisticChoice = userInputService.getUserChoice("""
                                 What statistic would you like to see?
-                                "1. Print their average points per game
-                                "2. Max number of points in a game""", 1, 2);
+                                1. Print their average points per game
+                                2. Max number of points in a game""", 1, 2);
 
                         switch (userStatisticChoice) {
                             case 1:

@@ -4,9 +4,10 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Getter
@@ -15,11 +16,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Table(name="SPORTS_STATISTICS")
 public class Statistic {
     @Id
-    private int id= counter.getAndIncrement();
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private String name;
     private int scoreInGame;
     private String sport="Bowling";
-    private static final AtomicInteger counter=new AtomicInteger(0);
 
     @Override
     public boolean equals(Object o) {
